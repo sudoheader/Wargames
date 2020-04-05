@@ -1,6 +1,6 @@
 # Bandit Writeup on [overthewire.org](https://overthewire.org/wargames/bandit/)
 
-This writeup is similar to other writeups from around the web and the few resources that I did use are around the web. We will use `sshpass` to make things easier to login without having to enter the password everytime. <!--- FIXME: Please be advised that the keys for each level needs to be decrypted in this writeup to avoid copycats. -->
+This writeup is similar to other writeups from around the web and the few resources that I did use are around the web. We will use `sshpass` to make things easier to login without having to enter the password everytime. 
 
 ## Bandit Level 0
 
