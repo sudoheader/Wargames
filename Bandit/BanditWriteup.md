@@ -1,6 +1,8 @@
 # Bandit Writeup on [overthewire.org](https://overthewire.org/wargames/bandit/)
 
-This writeup is similar to other writeups from around the web and the few resources that I did use are around the web. We will use `sshpass` to make things easier to login without having to enter the password everytime. 
+This writeup is similar to other writeups that can be found around the web. To name a few: YouTube playlists on Bandit OverTheWire from [John Hammond](https://www.youtube.com/playlist?list=PL1H1sBF1VAKUsYdQd94dO9MgSaY2p1AJ4), [HackerSploit](https://www.youtube.com/playlist?list=PLBf0hzazHTGOIn_vuuuCzRFVhYiDBnJID), and [USCGA](https://github.com/USCGA/writeups/tree/master/overthewire/bandit) writeups on GitHub, which to some extent are far more detailed.
+
+We will use `sshpass` to make things easier to login without having to enter the password everytime. 
 
 ## Bandit Level 0
 
@@ -536,7 +538,7 @@ sshpass -f bandit24 ssh bandit24@bandit.labs.overthewire.org -p 2220
 
 ## Bandit Level 24 --> Level 25
 
-Brute force with for loop either using bash or python with sockets to get the password.
+Brute force with for loop either using `bash` or `python` with sockets to get the password.
 
 ```
 bandit24@bandit:~$ cd /tmp/temp1
@@ -672,7 +674,6 @@ sshpass -f bandit28 ssh bandit28@bandit.labs.overthewire.org -p 2220
 ## Bandit Level 28 --> Level 29
 
 ```
-
 bandit28@bandit:~$ mktemp -d
 /tmp/tmp.1YYcQI9fvX
 bandit28@bandit:~$ cd /tmp/tmp.1YYcQI9fvX
