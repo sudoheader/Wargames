@@ -1,2 +1,2 @@
-Bandit Wargame from overthewire.org
+Wargames from overthewire.org
 
