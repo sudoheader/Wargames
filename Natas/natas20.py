@@ -7,7 +7,7 @@ import binascii
 username = 'natas20'
 password = 'eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF'
 
-url = 'http://%s.natas.labs.overthewire.org/' % username
+url = 'http://%s.natas.labs.overthewire.org/index-source.html' % username
 
 session = requests.Session()
 
