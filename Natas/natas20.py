@@ -2,7 +2,6 @@
 
 import requests
 import re
-import binascii
 
 username = 'natas20'
 password = 'eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF'
