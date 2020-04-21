@@ -33,5 +33,6 @@
 $object = new Logger();
 
 echo(base64_encode(serialize($object)));
+// for this to run without error, run as: php 26_tool.php 2> /dev/null
 
 ?>
