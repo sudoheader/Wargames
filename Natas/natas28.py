@@ -44,6 +44,10 @@ blocks = (len(injection) - 10) / block_size
 if (len(injection) - 10) % block_size != 0: blocks += 1
 print(blocks)
 
+response = session.post(url, data = { "query": injection}, auth = (username, password)) # 'shrink' query from 9 to 8 so we can input %
+raw_inject = base64.b64decode(requests.utils.unquote(response.url[60:]))
+# print(repr(raw_inject))
+print(raw_inject)
 # print(repr(base64.b64decode(requests.utils.unquote(response.url[60:]))))
 # print(base64.b64decode(requests.utils.unquote(response.url[60:])))
 # print(response.text)
