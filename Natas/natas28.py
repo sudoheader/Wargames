@@ -26,7 +26,7 @@ block_size = 16
 
 import string
 
-correct_string = repr('\x9eb&\x86\xa5&@YW\x06\t\x9a\xbc\xb0R\xbb')
+correct_string = repr(b'\x9eb&\x86\xa5&@YW\x06\t\x9a\xbc\xb0R\xbb')
 for c in string.printable:
 	print("trying", c)
 	response = session.post(url, data = { "query": "a"*9+c }, auth = (username, password))
