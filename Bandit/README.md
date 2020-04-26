@@ -2,7 +2,7 @@
 
 This writeup is similar to other writeups that can be found around the web. To name a few: YouTube playlists on Bandit OverTheWire from [John Hammond](https://www.youtube.com/playlist?list=PL1H1sBF1VAKUsYdQd94dO9MgSaY2p1AJ4), [HackerSploit](https://www.youtube.com/playlist?list=PLBf0hzazHTGOIn_vuuuCzRFVhYiDBnJID), and [USCGA](https://github.com/USCGA/writeups/tree/master/overthewire/bandit) writeups on GitHub, which to some extent are far more detailed.
 
-We will use `sshpass` to make things easier to login without having to enter the password everytime. 
+We will use `sshpass` to make things easier to login without having to enter the password everytime.
 
 ## Bandit Level 0
 

@@ -3,7 +3,6 @@
 import requests
 import re
 import base64
-import urllib
 
 username = 'natas28'
 password = 'JWwR438wkgTsNKBbcJoowyysdM82YjeF'

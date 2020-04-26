@@ -2,7 +2,6 @@
 
 import requests
 import re
-import base64
 
 username = 'natas29'
 password = 'airooCaiseiyee8he8xongien9euhe8b'
